@@ -23,7 +23,7 @@ Another WP7 styled button, this time just for text. Like all the buttons here, h
 
 Add the following to a button to apply this style: `Style="{DynamicResource SquareButtonStyle}"`
 
-### AccentedAquareButton
+### AccentedSquareButton
 
 A slightly modified version of `SquareButton` that has the current accent color as background color.
 
