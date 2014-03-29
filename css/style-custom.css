@@ -71,7 +71,11 @@ blockquote {
   font-size: 1.5em;
 }
 
-.ad-container {
+.ad-container-horizontal {
   margin-top: 20px;
   text-align: center;
+}
+
+.ad-container-vertical {
+  margin-top: 0.5em;
 }
