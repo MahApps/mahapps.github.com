@@ -16,6 +16,7 @@ Currently not all controls are documented. The list of controls with documentati
  - [ProgressRing]({{site.baseurl}}/controls/progress-ring.html)
  - [RangeSlider]({{site.baseurl}}/controls/range-slider.html)
  - [Slider]({{site.baseurl}}/controls/slider.html)
+ - [SplitButton and DropDownButton]({{site.baseurl}}/controls/split_dropdownbutton.html)
  - [TabControl]({{site.baseurl}}/controls/tab-control.html)
  - [TextBox]({{site.baseurl}}/controls/textbox.html)
  - [Tile]({{site.baseurl}}/controls/tile.html)
