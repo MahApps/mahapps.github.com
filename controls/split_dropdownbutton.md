@@ -1,36 +1,38 @@
+---
 layout: no-sidebar
 title: SplitButton and DropDownButton
+---
 
-###SplitButton
+### SplitButton
 
 ![]({{site.baseurl}}/images/splitButton_1.png)  
 
 This controls is like button with dropdownlist, but content of the button changed when selected item changed.
 
-###Events
+### Events
 SplitButton has SelectionChanged and Click events
 
 
-###SelectedItem and SelectedIndex
+### SelectedItem and SelectedIndex
 This properties usage is just like in Listbox or ComboBox. When one of this properties changed, Content of the button will also changed.
 
-###Binding to ObservableCollection<T> or Dictionary<TK, TV>
-To correctly bind ObservableCollection or Dictionary to SplitButton you need to use ItemsSource and DisplayMemberPath
-For ex, ```ItemsSource="{Binding Albums}" DisplayMemberPath="Title"```
-In case if you bind simple types like enum or int32, you don`t need to use DisplayMemberPath property, only ItemsSource.
+### Binding to `ObservableCollection` or `Dictionary`
+To correctly bind an `ObservableCollection` or a `Dictionary` to `SplitButton`, you need to use `ItemsSource` and `DisplayMemberPath`
+For ex, `ItemsSource="{Binding Albums}" DisplayMemberPath="Title"`
+In case you bind simple types like an enum or integer, you don`t need to use `DisplayMemberPath` property, only `ItemsSource`.
 
-###Orientation
+### Orientation
 SplitButton supports orientation changing as you can see on the screenshot.
 
-###Button commands
+### Button commands
 You can use button commands for SplitButton
 
-###Icon property
+### Icon property
 You can add separate icon to SplitButton to display it independently from its content.
 It could be bitmap image or vector icon.
 ```Icon="{DynamicResource appbar_alert}"```
 
-###Example
+### Example
 ```<Controls:SplitButton Icon="{DynamicResource appbar_alert}"
                                 HorizontalContentAlignment="Left"
                                 HorizontalAlignment="Center"
@@ -46,24 +48,24 @@ result will be:
 
 
 
-###DropDownButton
+### DropDownButton
 
 ![]({{site.baseurl}}/images/dropDownButton_1.png)  
 
-This control almost the same as splitbutton with few differences:
-it has no selectedItem and SelectedIndex properties and also has no Selectionchanged event.
-Content of the button also not changing. Its static. DropDoenList is context menu, instead of Listbox in SplitButton.
-Otherwise its identical to SplitButton.
+This control almost the same as `SplitButton` with few differences:
+It has no `SelectedItem` and `SelectedIndex` properties and also has no `SelectionChanged` event.
+The content of the button also doesn't change, it's static. The Dropdownlist is a context menu instead of Listbox in `SplitButton`.
+Inj all other aspects it's identical to SplitButton.
 
-###Example
-<Controls:DropDownButton  VerticalContentAlignment="Center"
-                                     Width="120"
-                                     Content="Test"
-                                     DisplayMemberPath="Title"
-                                     Icon="{DynamicResource appbar_music}"
-                                     ItemsSource="{Binding Albums}">
-            </Controls:DropDownButton>
+### Example
+<Controls:DropDownButton VerticalContentAlignment="Center"
+                         Width="120"
+                         Content="Test"
+                         DisplayMemberPath="Title"
+                         Icon="{DynamicResource appbar_music}"
+                         ItemsSource="{Binding Albums}">
+</Controls:DropDownButton>
 			
-result:
+Result:
 ![]({{site.baseurl}}/images/dropDownButton_2.png)  
 			
