@@ -15,6 +15,7 @@ Currently not all controls are documented. The list of controls with documentati
  - [ProgressBar]({{site.baseurl}}/controls/progressbar.html)
  - [ProgressRing]({{site.baseurl}}/controls/progress-ring.html)
  - [RangeSlider]({{site.baseurl}}/controls/range-slider.html)
+ - [Slider]({{site.baseurl}}/controls/slider.html)
  - [TabControl]({{site.baseurl}}/controls/tab-control.html)
  - [TextBox]({{site.baseurl}}/controls/textbox.html)
  - [Tile]({{site.baseurl}}/controls/tile.html)
@@ -29,4 +30,3 @@ There a still a few more controls which are being worked on and are undocumented
  - DataGrid
  - DatePicker and Calendar
  - ListView and ListBox
- - Slider
