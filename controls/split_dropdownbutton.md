@@ -56,13 +56,13 @@ Content of the button also not changing. Its static. DropDoenList is context men
 Otherwise its identical to SplitButton.
 
 ###Example
-<Controls:DropDownButton  VerticalContentAlignment="Center"
+```<Controls:DropDownButton  VerticalContentAlignment="Center"
                                      Width="120"
                                      Content="Test"
                                      DisplayMemberPath="Title"
                                      Icon="{DynamicResource appbar_music}"
                                      ItemsSource="{Binding Albums}">
-            </Controls:DropDownButton>
+            </Controls:DropDownButton>```
 			
 result:
 ![]({{site.baseurl}}/images/dropDownButton_2.png)  
