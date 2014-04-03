@@ -28,6 +28,5 @@ Currently not all controls are documented. The list of controls with documentati
 There a still a few more controls which are being worked on and are undocumented. Listed below are some of the controls.
 
  - ComboBox
- - DataGrid
  - DatePicker and Calendar
  - ListView and ListBox
