@@ -9,7 +9,7 @@ This control has several styles in MahApps.Metro:
 
 ![]({{site.baseurl}}/images/slider_standard.png) 
 
-This is the basic style for the `Slider`. It applies automatically if you don`t use a custom style.
+This is the basic style for the `Slider`. It applies automatically if you don't use a custom style.
 If you want to base your custom style on that style, you need to add `BasedOn="{StaticResource MetroSlider}"`
 
 ### FlatSlider style
