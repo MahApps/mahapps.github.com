@@ -1,14 +1,16 @@
+---
 layout: no-sidebar
 title: Slider
+---
 
 This control has several styles in MahApps.Metro:
 
-###BasicStyle
+### BasicStyle
 ![]({{site.baseurl}}/images/slider_standard.png) 
 Its the basic style for Slider. It applies automatically if you don`t use your custom style.
 If you want to base your custom style on that style, you need to add ```BasedOn="{StaticResource MetroSlider}"```
 
-###FlatSlider style
+### FlatSlider style
 ![]({{site.baseurl}}/images/slider_cube.png) 
 To use that style you need to load resource dictionary
 ```<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/FlatSlider.xaml" />```
