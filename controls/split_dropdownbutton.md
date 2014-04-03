@@ -30,18 +30,21 @@ You can use button commands for SplitButton
 ### Icon property
 You can add separate icon to SplitButton to display it independently from its content.
 It could be bitmap image or vector icon.
-```Icon="{DynamicResource appbar_alert}"```
+`Icon="{DynamicResource appbar_alert}"`
 
 ### Example
-```<Controls:SplitButton Icon="{DynamicResource appbar_alert}"
-                                HorizontalContentAlignment="Left"
-                                HorizontalAlignment="Center"
-                                VerticalContentAlignment="Center"
-                                Width="120"
-                                SelectedIndex="2"
-                                ItemsSource="{Binding Albums}"
-                                DisplayMemberPath="Title"
-                                VerticalAlignment="Center"  />```
+```xml
+<Controls:SplitButton 
+    Icon="{DynamicResource appbar_alert}"
+    HorizontalContentAlignment="Left"
+    HorizontalAlignment="Center"
+    VerticalContentAlignment="Center"
+    Width="120"
+    SelectedIndex="2"
+    ItemsSource="{Binding Albums}"
+    DisplayMemberPath="Title"
+    VerticalAlignment="Center" />
+```
 								
 result will be:
 ![]({{site.baseurl}}/images/splitButton_2.png)
@@ -58,13 +61,16 @@ The content of the button also doesn't change, it's static. The Dropdownlist is 
 Inj all other aspects it's identical to SplitButton.
 
 ### Example
-<Controls:DropDownButton VerticalContentAlignment="Center"
-                         Width="120"
-                         Content="Test"
-                         DisplayMemberPath="Title"
-                         Icon="{DynamicResource appbar_music}"
-                         ItemsSource="{Binding Albums}">
+```xml
+<Controls:DropDownButton 
+    VerticalContentAlignment="Center"
+    Width="120"
+    Content="Test"
+    DisplayMemberPath="Title"
+    Icon="{DynamicResource appbar_music}"
+    ItemsSource="{Binding Albums}">
 </Controls:DropDownButton>
+```
 			
 Result:
 ![]({{site.baseurl}}/images/dropDownButton_2.png)  
