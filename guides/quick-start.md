@@ -177,7 +177,7 @@ Including this within the `MetroWindow` tag (under the `Window.Resources` sectio
 ```
 
 
-> Make sure to include the [icons](#icons) to get the cupcake
+> Make sure to include the [icons]({{site.baseurl}}/guides/icons-and-resources.html) to get the cupcake
 
 Produces this window titlebar:
 
