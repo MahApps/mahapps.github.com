@@ -5,3 +5,4 @@ baseurl: http://mahapps.com
 
 gems:
   - jekyll-mentions
+  - jekyll-sitemap
