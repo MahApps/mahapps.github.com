@@ -123,7 +123,6 @@ All of MahApp.Metro's resources are contained within separate resource dictionar
   </ResourceDictionary>
 </Application.Resources>
 ```
-	
 
 The end result will look something like this. If you want to know more about how the control works, more information can be found below.
 
@@ -185,6 +184,8 @@ Produces this window titlebar:
 ![]({{site.baseurl}}/images/05_WindowCommands.png)
 
 The foreground (link) colour of `WindowCommands` will always be white, *unless* the titlebar is disabled, in which case it will be the reverse of whatever theme you have selected. For example, using the White/Light theme, the foreground colour will be black.
+
+There is also the `LeftWindowCommands`, that orientates the commands at the left side of the titlebar.
 
 <a name="moreinfo"></a>
 ### What Next?
