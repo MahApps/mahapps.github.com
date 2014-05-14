@@ -1,7 +1,6 @@
 ---
-layout: "no-sidebar"
+layout: no-sidebar
 title: Quick Start
-published: true
 ---
 
 ### Table Of Contents
