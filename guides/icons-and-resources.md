@@ -13,7 +13,7 @@ You can install this package using nuget:
 
 <pre class="nuget-button">Install-Package MahApps.Metro.Resources</pre>
 
-Currently, this consists of [Entypo](http://www.entypo.com/) and [Temparian's Modern UI Icon pack](http://modernuiicons.com/)
+Currently, this consists of [Entypo](http://www.entypo.com/) and [Templarian's Modern UI Icon pack](http://modernuiicons.com/)
 
 ![]({{site.baseurl}}/images/6_Resources.png)
 
