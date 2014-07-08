@@ -3,7 +3,7 @@ layout: no-sidebar
 title: Controls 
 ---
 
-Currently not all controls are documented. The list of controls with documentation are liste below:
+Currently not all controls are documented. The list of controls with documentation are listed below:
 
  - [Buttons]({{site.baseurl}}/controls/buttons.html)
  - [DataGrid]({{site.baseurl}}/controls/datagrid.html)
