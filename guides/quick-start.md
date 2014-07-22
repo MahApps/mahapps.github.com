@@ -56,7 +56,7 @@ After installing MahApps.Metro:
   ```
  
 
- - change `<Window ...` tag to `<Controls:MetroWindow ...` (remember to change the closing tag too!)
+ - change `<Window ...` tag to `<controls:MetroWindow ...` (remember to change the closing tag too!)
 
 You should have something like this (don't copy and paste this):
 
