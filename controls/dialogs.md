@@ -3,7 +3,7 @@ layout: no-sidebar
 title: Dialogs
 ---
 
-Since the built-in WPF dialogs are unstyleable, we had to create our own implementation.
+Since the built-in WPF dialogs are unstyleable, we had to create our own implementation. You will find our dialogs within the MahApps.Metro.Controls.Dialogs namespace.
 
 <img src="{{site.baseurl}}/images/dialog.png" style="width: 800px;"/>
 
