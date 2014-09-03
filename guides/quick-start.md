@@ -60,18 +60,17 @@ After installing MahApps.Metro:
 
 You should have something like this (don't copy and paste this):
 
-
-```xml
+{% highlight xml %}
 <controls:MetroWindow x:Class="WpfApplication2.MainWindow"
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-	Title="MainWindow" 
-	Height="350" 
-	Width="525">
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                        Title="MainWindow" 
+                        Height="350" 
+                        Width="525">
 <!-- your layout here -->
 </controls:MetroWindow>
-```
+{% endhighlight %}
 
 #### Modifying the CodeBehind File
 
