@@ -8,7 +8,8 @@ title: Quick Start
 - [Styling the MetroWindow](#styling)
 - [How does MetroWindow work](#explanation)
 - [Customization](#customization)
-  + [WindowCommands](#windowcommands)
+  + [WindowButtonCommands](#windowbuttoncommands)
+  + [(Left-/Right-) WindowCommands](#windowcommands)
 - [More Info](#moreinfo)
 
 
@@ -49,28 +50,27 @@ For now we'll use `MetroWindow`, as this approach will work for a good percentag
 After installing MahApps.Metro:
 
  - open up `MainWindow.xaml`
- - add this attribute inside the opening Window tag. (It's how you reference other namespaces in XAML):
-
-  ```xml   
-    xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-  ```
- 
-
- - change `<Window ...` tag to `<controls:MetroWindow ...` (remember to change the closing tag too!)
+ - add this attribute inside the opening Window tag. (It's how you reference other namespaces in XAML):  
+   `xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"`  
+   or  
+   `xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"`
+ - change `<Window ...` tag to `<Controls:MetroWindow ...` (remember to change the closing tag too!)
 
 You should have something like this (don't copy and paste this):
 
-{% highlight xml %}
-<controls:MetroWindow x:Class="WpfApplication2.MainWindow"
-                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-                        Title="MainWindow" 
-                        Height="350" 
-                        Width="525">
-<!-- your layout here -->
-</controls:MetroWindow>
-{% endhighlight %}
+```xml
+<Controls:MetroWindow x:Class="WpfApplication2.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      Title="MainWindow" 
+                      Height="350" 
+                      Width="525">
+
+  <!-- your content here -->
+
+</Controls:MetroWindow>
+```
 
 #### Modifying the CodeBehind File
 
@@ -83,18 +83,18 @@ using MahApps.Metro.Controls
 
 public partial class MainWindow : MetroWindow
 {
+  // ...
 }
 ```
-
 
 But in most cases you can just drop the base class (because this is a `partial` class the XAML should take care of this):
 
 ```csharp
 public partial class MainWindow
 {
+  // ...
 }
 ```
-
 
 The end result will look something like this:
 
@@ -104,7 +104,7 @@ The end result will look something like this:
 
 #### Using Built-In Styles
 
-All of MahApp.Metro's resources are contained within separate resource dictionaries. In order for most of the controls to adopt the MahApps.Metro theme, you will need to add the following ResourceDictionaries to your `App.xaml`
+All of MahApp.Metro's resources are contained within separate resource dictionaries. In order for most of the controls to adopt the MahApps.Metro theme, you will need to add the following ResourceDictionaries to your `App.xaml`.  
 
 **App.xaml**
 
@@ -122,6 +122,8 @@ All of MahApp.Metro's resources are contained within separate resource dictionar
 </Application.Resources>
 ```
 
+> Make sure that all file names are Case Sensitive!
+
 The end result will look something like this. If you want to know more about how the control works, more information can be found below.
 
 ![]({{site.baseurl}}/images/03_StyledWindow.png)
@@ -137,20 +139,27 @@ The default `MetroWindow` is made up of a few components:
 
 If you don't like the elements that are labelled, fear not, they're all optional.
 
-- The titlebar is what sets `MetroWindow` apart from rolling your own. `ShowTitleBar="true|false"`
+- The titlebar is what sets `MetroWindow` apart from rolling your own. `ShowTitleBar="True|False"`
 - The resize grip is not the *only* way to resize a `MetroWindow` - all edges and corners can be gripped, but given a `MetroWindow` doesn't have a noticeable window "chrome" like an aero window, the resize grip can help reassure users.
 - Instead of using static images, the icons for minimize/maximize/close are a font called **Marlett**. To explain why this is so requires a walk down memory lane, or at least a visit to [the Wikipedia article](http://en.wikipedia.org/wiki/Marlett) about it.
-- You can even hide the icons on the title bar by setting the  `ShowIconOnTitleBar="true|false"` 
+- You can even hide the icons on the title bar by setting the `ShowIconOnTitleBar="True|False"` 
 
 <a name="customization"></a>
 ### Customization
 
+<a name="windowbuttoncommands"></a>
+#### WindowButtonCommands
+
+`WindowButtonCommands` are the minimize, maximize/restore, and close buttons. You can hide the buttons with `ShowMinButton="True|False"`, `ShowMaxRestoreButton="True|False"` and `ShowCloseButton="True|False"`.
+
+The visibility of the minimize and maximize/restore buttons are also effected by the `ResizeMode`. If `ResizeMode="NoResize"` the buttons are collapsed. If `ResizeMode="CanMinimize"` the maximize/restore button is collapsed.
+
 <a name="windowcommands"></a>
-#### WindowCommands
+#### (Left-/Right-) WindowCommands
 
-`WindowCommands` are the minimize, maximize/restore, and close buttons. You can add your own controls to `WindowsCommands` - by default, buttons have a style automatically applied to them to make them fit in with the rest of the `WindowsCommands`. As of 0.9, you are no longer limited to just buttons, but any control. Be aware, you're responsible for styling anything other than buttons.
+You can add your own controls to `LeftWindowsCommands` or `RightWindowsCommands` - by default, buttons have a style automatically applied to them to make them fit in with the rest of the `WindowsCommands`. As of 0.9, you are no longer limited to just buttons, but any control. Be aware, you're responsible for styling anything other than buttons.
 
-Including this within the `MetroWindow` tag:
+Including this within the `<MetroWindow> ... </MetroWindow>` tag:
 
 ```xml
 <Controls:MetroWindow.RightWindowCommands>
@@ -174,16 +183,13 @@ Including this within the `MetroWindow` tag:
 </Controls:MetroWindow.RightWindowCommands>
 ```
 
-
-> Make sure to include the [icons]({{site.baseurl}}/guides/icons-and-resources.html) to get the cupcake
+> Make sure to include the [icons]({{site.baseurl}}/guides/icons-and-resources.html) to get the cupcake.
 
 Produces this window titlebar:
 
 ![]({{site.baseurl}}/images/05_WindowCommands.png)
 
-The foreground (link) colour of `WindowCommands` will always be white, *unless* the titlebar is disabled, in which case it will be the reverse of whatever theme you have selected. For example, using the White/Light theme, the foreground colour will be black.
-
-There is also the `LeftWindowCommands`, that orientates the commands at the left side of the titlebar.
+The foreground (link) colour of `(Left-/Right-) WindowCommands` will always be white, *unless* the titlebar is disabled, in which case it will be the reverse of whatever theme you have selected. For example, using the White/Light theme, the foreground colour will be black.
 
 <a name="moreinfo"></a>
 ### What Next?
