@@ -5,12 +5,12 @@ title: Controls
 
 Currently not all controls are documented. The list of controls with documentation are listed below:
 
+ - [MetroWindow]({{site.baseurl}}/controls/metro-window.html)
  - [Buttons]({{site.baseurl}}/controls/buttons.html)
  - [DataGrid]({{site.baseurl}}/controls/datagrid.html)
  - [Dialogs]({{site.baseurl}}/controls/dialogs.html)
  - [FlipView]({{site.baseurl}}/controls/flipview.html)
  - [Flyouts]({{site.baseurl}}/controls/flyouts.html)
- - [MetroWindow]({{site.baseurl}}/controls/metro-window.html)
  - [NumericUpDown]({{site.baseurl}}/controls/numericupdown.html)
  - [ProgressBar]({{site.baseurl}}/controls/progressbar.html)
  - [ProgressRing]({{site.baseurl}}/controls/progress-ring.html)
