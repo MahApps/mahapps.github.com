@@ -53,3 +53,4 @@ In order to maintain compatibility for both .NET 4.0 and 4.5, we make use of the
 * [Carnac](http://code52.org/carnac/)
 * [Espera](http://getespera.com)
 * [SimpleMP](https://github.com/punker76/simple-music-player)
+* [Deepfreeze.io](https://www.deepfreeze.io/apps/)
