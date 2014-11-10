@@ -14,7 +14,7 @@ The Progress Ring control is styled after a similar control in Windows 8 to indi
 Override `Foreground` if you wish to change the colour.
 
 ```xml
-<Controls:ProgressRing Foreground="{DynamicResource AccentColorBrush"/>
+<Controls:ProgressRing Foreground="{DynamicResource AccentColorBrush}"/>
 ```
 
 ![]({{site.baseurl}}/images/progress_ring.gif)
