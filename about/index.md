@@ -46,11 +46,12 @@ In order to maintain compatibility for both .NET 4.0 and 4.5, we make use of the
 
 ### Examples
 
+* [Espera](http://getespera.com)
+* [SimpleMP](https://github.com/punker76/simple-music-player)
 * [myEcho](http://myechoapp.com/)
 * [Windows Phone Power Tools](http://wptools.codeplex.com/)
 * [XamlSpy](http://xamlspy.com/)
 * [MarkPad](http://code52.org/DownmarkerWPF)
 * [Carnac](http://code52.org/carnac/)
-* [Espera](http://getespera.com)
-* [SimpleMP](https://github.com/punker76/simple-music-player)
 * [Deepfreeze.io](https://www.deepfreeze.io/apps/)
+* [Markdown-Edit](http://mike-ward.net/markdownedit/)
