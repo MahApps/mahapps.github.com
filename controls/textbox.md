@@ -9,7 +9,7 @@ There is just the one style in this library for `TextBox`, however it does have 
 
 A **watermark** - in the context of textboxes - refers to text that appears in the textbox *before* the user has focused or entered any text. This is often an alternative to providing a label next to your textbox - for example, a search box would have a watermark with the text 'enter search terms' to indicate it's purpose.
 
-`<TextBox Controls:TextboxHelper.Watermark="This is a textbox" />`
+`<TextBox Controls:TextBoxHelper.Watermark="This is a textbox" />`
 
 Will produce a textbox that looks like the below image. The three states are *unfocused* (with no user text provided), focused, and unfocused (with user text provided).
 
@@ -19,7 +19,7 @@ Will produce a textbox that looks like the below image. The three states are *un
 
 Like the watermark, a simple attached property adds in the functionality
 
-`<TextBox Controls:TextboxHelper.ClearTextButton="True" />`
+`<TextBox Controls:TextBoxHelper.ClearTextButton="True" />`
 
 Which will give you
 
