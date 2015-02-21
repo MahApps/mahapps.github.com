@@ -96,3 +96,66 @@ You can also do this with the ThemeManager, like so:
                                         ThemeManager.GetAppTheme("BaseDark"));
         }
     } 
+### Custom Accents and Themes
+Another nice feature of `MahApps.Metro` `ThemeManager` is to use custom created accents and themes or use a dynamically created accent and theme.
+
+    <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+        <!--ACCENT COLORS-->
+        <Color x:Key="HighlightColor">#FF9F0055</Color>
+
+        <!--80%-->
+        <Color x:Key="AccentColor">#CCD80073</Color>
+        <!--60%-->
+        <Color x:Key="AccentColor2">#99D80073</Color>
+        <!--40%-->
+        <Color x:Key="AccentColor3">#66D80073</Color>
+        <!--20%-->
+        <Color x:Key="AccentColor4">#33D80073</Color>
+
+        <!-- re-set brushes too -->
+        <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource HighlightColor}" />
+        <SolidColorBrush x:Key="AccentColorBrush" Color="{StaticResource AccentColor}"/>
+        <SolidColorBrush x:Key="AccentColorBrush2" Color="{StaticResource AccentColor2}"/>
+        <SolidColorBrush x:Key="AccentColorBrush3" Color="{StaticResource AccentColor3}"/>
+        <SolidColorBrush x:Key="AccentColorBrush4" Color="{StaticResource AccentColor4}"/>
+
+        <SolidColorBrush x:Key="WindowTitleColorBrush" Color="{StaticResource AccentColor}" />
+
+        <SolidColorBrush x:Key="AccentSelectedColorBrush" Color="White" />
+
+        <LinearGradientBrush x:Key="ProgressBrush" EndPoint="0.001,0.5" StartPoint="1.002,0.5">
+            <GradientStop Color="{StaticResource HighlightColor}" Offset="0" />
+            <GradientStop Color="{StaticResource AccentColor3}" Offset="1" />
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="CheckmarkFill" Color="{StaticResource AccentColor}" />
+        <SolidColorBrush x:Key="RightArrowFill" Color="{StaticResource AccentColor}" />
+
+        <Color x:Key="IdealForegroundColor">White</Color>
+        <SolidColorBrush x:Key="IdealForegroundColorBrush" Color="{StaticResource IdealForegroundColor}"/>
+
+        </ResourceDictionary>
+
+In order to use this custom accent, you need to add it to the `ThemeManager` first.
+
+    public partial class App : Application
+    {
+		protected override void OnStartup(StartupEventArgs e)
+    	{
+        	// add custom accent and theme resource dictionaries
+        	ThemeManager.AddAccent("CustomAccent1", new Uri("pack://application:,,,/MahAppsMetroThemesSample;component/CustomAccents/CustomAccent1.xaml"));
+
+        	// get the theme from the current application
+        	var theme = ThemeManager.DetectAppStyle(Application.Current);
+
+        	// now use the custom accent
+        	ThemeManager.ChangeAppStyle(Application.Current,
+                                    ThemeManager.GetAccent("CustomAccent1"),
+                                    theme.Item1);
+
+        	base.OnStartup(e);
+    	}
+	}
+It is also possible to create an accent resource dictionary dynamically by using a specific color.
