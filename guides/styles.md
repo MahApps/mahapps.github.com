@@ -69,3 +69,30 @@ The fastest way is to specify the accent and theme resource in App.xaml.
         }
     }
 ### A Window different to your Application's MainPage
+With `MahApps.Metro` you can have a different accent and theme for a `MetroWindow`. The main window or any other `MetroWindow` will keep the specified accent and theme in the App.xaml.
+
+    <Controls:MetroWindow.Resources>
+        <ResourceDictionary>
+           <ResourceDictionary.MergedDictionaries>
+                <!-- this window should be blue -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <!-- and should use the light theme -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Controls:MetroWindow.Resources>
+You can also do this with the ThemeManager, like so:
+
+    public partial class AccentStyleWindow : MetroWindow
+    {
+        public void ChangeAppStyle()
+        {
+            // get the theme from the window
+            var theme = ThemeManager.DetectAppStyle(this);
+
+            // now set the Red accent and dark theme
+            ThemeManager.ChangeAppStyle(this,
+                                        ThemeManager.GetAccent("Red"),
+                                        ThemeManager.GetAppTheme("BaseDark"));
+        }
+    } 
