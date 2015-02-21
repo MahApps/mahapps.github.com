@@ -8,9 +8,9 @@ title: Styles
 
 <a name="overview"></a>
 ### Overview
-This guide will introduce you to the many accents and themes that MahApps.Metro has and how to create your own.
+This guide will introduce you to the many accents and themes that `MahApps.Metro` has and how to create your own.
 
-All of MahApps.Metro's accents and themes are contained within separate resource dictionaries **(Make sure that all file names are spelled correct. They are Case Sensitive!).**
+All of `MahApps.Metro`'s accents and themes are contained within separate resource dictionaries **(Make sure that all file names are spelled correct. They are Case Sensitive!).**
 
 <a name="how-to-change-the-theme"></a>
 ### How to change the current theme
@@ -51,3 +51,21 @@ The fastest way is to specify the accent and theme resource in App.xaml.
 ![Cobalt and BaseLight theme.](http://jkarger.de/images/mahapps_themes_01.png)
 
 #### via ThemeManager
+`MahApps.Metro` has a `ThemeManager` method that lets you change the accent and theme using the code-behind file. It can be done in 2 lines, like so:
+
+    public partial class App : Application
+    {
+        protected override void OnStartup (StartupEventArgs e)
+        {
+            // get the theme from the current application
+            var theme = ThemeManager.DetectAppStyle(Application.Current);
+
+            // now set the Green accent and dark theme
+            ThemeManager.ChangeAppStyle(Application.Current,
+                                        ThemeManager.GetAccent("Green"),
+                                        ThemeManager.GetAppTheme("BaseDark"));
+
+            base.OnStartup(e);
+        }
+    }
+### A Window different to your Application's MainPage
