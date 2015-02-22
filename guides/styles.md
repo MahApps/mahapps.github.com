@@ -103,7 +103,7 @@ You can also do this with the ThemeManager, like so:
         }
     } 
 <a name="custom"></a>
-### Creating Custom Accents and Themes
+## Creating Custom Accents and Themes
 Another nice feature of `MahApps.Metro` `ThemeManager` is to use custom created accents and themes or use a dynamically created accent and theme.
 
     <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
