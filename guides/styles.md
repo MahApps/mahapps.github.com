@@ -5,6 +5,10 @@ title: Styles
 
 ### Table of Contents
 - [Overview](#overview)
+- [How to change the current theme... via App.xaml](#app)
+- [How to change the current theme... via ThemeManager](#thememanager)
+- [How to change the current theme... On a Window different to your Application's MainPage](#window)
+- [Creating Custom Accents and Themes](#custom)
 
 <a name="overview"></a>
 ### Overview
@@ -12,8 +16,8 @@ This guide will introduce you to the many accents and themes that `MahApps.Metro
 
 All of `MahApps.Metro`'s accents and themes are contained within separate resource dictionaries **(Make sure that all file names are spelled correct. They are Case Sensitive!).**
 
-<a name="how-to-change-the-theme"></a>
-### How to change the current theme
+<a name="app"></a>
+## How to change the current theme
 You can choose between these available accents:
 
 > "Red", "Green", "Blue", "Purple", "Orange", "Lime", "Emerald", "Teal", "Cyan", "Cobalt", "Indigo", "Violet", "Pink", "Magenta", "Crimson", "Amber", "Yellow", "Brown", "Olive", "Steel", "Mauve", "Taupe", "Sienna"
@@ -50,6 +54,7 @@ The fastest way is to specify the accent and theme resource in App.xaml.
     </Application>
 ![Cobalt and BaseLight theme.](http://jkarger.de/images/mahapps_themes_01.png)
 
+<a name="thememanager"></a>
 #### via ThemeManager
 `MahApps.Metro` has a `ThemeManager` method that lets you change the accent and theme using the code-behind file. It can be done in 2 lines, like so:
 
@@ -68,7 +73,8 @@ The fastest way is to specify the accent and theme resource in App.xaml.
             base.OnStartup(e);
         }
     }
-### A Window different to your Application's MainPage
+<a name="window"></a>
+### On a Window different to your Application's MainPage
 With `MahApps.Metro` you can have a different accent and theme for a `MetroWindow`. The main window or any other `MetroWindow` will keep the specified accent and theme in the App.xaml.
 
     <Controls:MetroWindow.Resources>
@@ -96,7 +102,8 @@ You can also do this with the ThemeManager, like so:
                                         ThemeManager.GetAppTheme("BaseDark"));
         }
     } 
-### Custom Accents and Themes
+<a name="custom"></a>
+### Creating Custom Accents and Themes
 Another nice feature of `MahApps.Metro` `ThemeManager` is to use custom created accents and themes or use a dynamically created accent and theme.
 
     <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
