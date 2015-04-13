@@ -56,3 +56,4 @@ In order to maintain compatibility for both .NET 4.0 and 4.5, we make use of the
 * [Windows Phone Power Tools](http://wptools.codeplex.com/)
 * [XamlSpy](http://xamlspy.com/)
 * [BigStash](https://www.bigstash.co/)
+* [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker)
