@@ -23,6 +23,14 @@ Segoe UI, Segoe WP and Zegoe UI are all Microsoft/Ascender fonts. They will not 
 
 In order to maintain compatibility for both .NET 4.0 and 4.5, we make use of the Microsoft.Windows.Shell in the former.
 
+### Other cool stuff
+
+If you're looking for a control that we don't have, we have some friends who have made MA.M compatible controls. Check them out:
+
+- [Loading indicators](https://github.com/100GPing100/LoadingIndicators.WPF), a collection of loading indicators for WPF by [@100GPing100](https://github.com/100GPing100)
+- [Dragablz](https://github.com/ButchersBoy/Dragablz), dragable and tearable tab control for WPF [http://dragablz.net](http://dragablz.net)
+- [MahApps.Metro.SimpleChildWindow](https://github.com/punker76/MahApps.Metro.SimpleChildWindow), a simple child window for MahApps.Metro
+
 ### Maintainers
 
 <div id="maintainer-list">
