@@ -65,4 +65,4 @@ If you're looking for a control that we don't have, we have some friends who hav
 * [XamlSpy](http://xamlspy.com/)
 * [BigStash](https://www.bigstash.co/)
 * [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker)
-* [Papercut](https://papercut.codeplex.com)
+* [Papercut](https://github.com/jaben/papercut)
