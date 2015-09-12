@@ -67,7 +67,8 @@ The `MetroWindow` can have...
                       Height="200"
                       Width="600"
 
-                      EnableDWMDropShadow="True"
+                      BorderThickness="0" 
+                      GlowBrush="Black"
                       ResizeMode="CanResizeWithGrip"
 
                       WindowTransitionsEnabled="False"
