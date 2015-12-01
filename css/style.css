@@ -445,3 +445,10 @@
 strong {
 	font-weight: 800;
 }
+
+.gitter-open-chat-button {
+	background-color: #41B1E1;
+}
+.gitter-open-chat-button:focus, .gitter-open-chat-button:hover {
+	background-color: #0071BC;
+}
