@@ -14,6 +14,10 @@ If you press and hold `+` or `-` then value keeps increasing, decreasing respect
 
 If you press and hold `+` or `-` for some longe time then the `Value` increases or decreases much faster. If this behaviour is not desired you can turn this off by setting `Speedup=false`. The default value is `true`.
 
+### HasDecimals
+
+Controls whether the NumericUpDown should show the decimal separator and decimal digits.
+
 ### InterceptArrowKeys
 
 You can also increase or decrease the `Value` using `Arrow Up` or `Arrow Down`. You can enable this behaviour if you set `InterceptArrowKeys=true`. By default this behaviour is enabled. The default value is `true`.
