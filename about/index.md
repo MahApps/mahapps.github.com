@@ -27,13 +27,17 @@ In order to maintain compatibility for both .NET 4.0 and 4.5, we make use of the
 
 If you're looking for a control that we don't have, we have some friends who have made MA.M compatible controls. Check them out:
 
+- [MahApps.Metro.SimpleChildWindow](https://github.com/punker76/MahApps.Metro.SimpleChildWindow), a simple child window for MahApps.Metro
 - [Loading indicators](https://github.com/100GPing100/LoadingIndicators.WPF), a collection of loading indicators for WPF by [@100GPing100](https://github.com/100GPing100)
 - [Dragablz](https://github.com/ButchersBoy/Dragablz), dragable and tearable tab control for WPF [http://dragablz.net](http://dragablz.net)
-- [MahApps.Metro.SimpleChildWindow](https://github.com/punker76/MahApps.Metro.SimpleChildWindow), a simple child window for MahApps.Metro
 
 ### Maintainers
 
 <div id="maintainer-list">
+  <p>
+    <img src="https://1.gravatar.com/avatar/1aea0f4dba1906e759377308c0df08f6?s=40"> Jan Karger (@punker76)
+    <a href="https://twitter.com/punker76">Twitter</a>
+  </p>
   <p>
     <img src="https://0.gravatar.com/avatar/337e8e7f3447c1245268f3313a3c3d88?s=40"> Brendan Forster (@shiftkey) 
     <a href="https://twitter.com/shiftkey">Twitter</a>
@@ -46,24 +50,21 @@ If you're looking for a control that we don't have, we have some friends who hav
     <img src="https://0.gravatar.com/avatar/0d3e475b86cba8c7eb6144364157ae8f?s=40"> Alex Mitchell (@Amrykid)
     <a href="https://twitter.com/Amrykid">Twitter</a>
   </p>
-  <p>
-    <img src="https://1.gravatar.com/avatar/1aea0f4dba1906e759377308c0df08f6?s=40"> Jan Karger (@punker76)
-    <a href="https://twitter.com/punker76">Twitter</a>
-  </p>
 </div>
 
 ### Examples
 
-* [Espera](http://getespera.com)
-* [SimpleMP](https://github.com/punker76/simple-music-player)
-* [myEcho](http://myechoapp.com/)
-* [Markdown-Edit](http://mike-ward.net/markdownedit/)
-* [MarkPad](http://code52.org/DownmarkerWPF)
-* [Carnac](http://code52.org/carnac/)
-* [ChocolateyGUI](https://github.com/chocolatey/ChocolateyGUI)
+* [Espera](http://getespera.com) by [@flagbug](https://github.com/flagbug) The best media player for Windows
+* [SimpleMP](https://github.com/punker76/simple-music-player) by [@punker76](https://github.com/punker76) Simple Music Player - SimpleMP - Keeps it simple and plays your music
+* [myEcho](http://myechoapp.com/) iOS Dictation for Windows
+* [Markdown Edit](http://markdownedit.com/) by [@mike-ward](https://github.com/mike-ward) A full-featured Markdown editor for Windows with an emphasis on content and keyboard shortcuts
+* [MarkPad](http://code52.org/DownmarkerWPF) by [@Code52](https://github.com/Code52) a visual Markdown editor (inspired by the [Downmarker project](http://code52.org/DownmarkerWPF/))
+* [Carnac](http://code52.org/carnac/) by [@Code52](https://github.com/Code52) the Magnificent Keyboard Utility
+* [ChocolateyGUI](https://github.com/chocolatey/ChocolateyGUI) ChocolateyGUI is a user interface for [Chocolatey NuGet](http://chocolatey.org/) (a Machine Package Manager for Windows)
 * [Windows Phone Power Tools](http://wptools.codeplex.com/)
-* [XamlSpy](http://xamlspy.com/)
-* [BigStash](https://www.bigstash.co/)
-* [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker)
-* [Papercut](https://github.com/jaben/papercut)
-* [FolderSecurityViewer](https://www.foldersecurityviewer.com)
+* [Modern UI for WPF (MUI)](https://github.com/firstfloorsoftware/mui) Inspired by MahApps.Metro
+* [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker) by [@Epix37](https://github.com/Epix37) HDT is an automatic deck tracker and manager for Hearthstone
+* [Papercut](https://github.com/jaben/papercut) by [@Jaben](https://github.com/Jaben) Simple Desktop SMTP Server / Email Receiver
+* [FolderSecurityViewer](https://www.foldersecurityviewer.com) Easy to use NTFS permissions reporter to get all effective security owners of your data
+* [Solutionizer](https://github.com/thoemmi/Solutionizer) by [@thoemmi](https://github.com/thoemmi) Creating ad-hoc solutions for Visual Studio
+* [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) Visualize and debug your live app
