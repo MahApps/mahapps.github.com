@@ -66,3 +66,4 @@ If you're looking for a control that we don't have, we have some friends who hav
 * [BigStash](https://www.bigstash.co/)
 * [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker)
 * [Papercut](https://github.com/jaben/papercut)
+* [FolderSecurityViewer](https://www.foldersecurityviewer.com)
