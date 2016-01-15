@@ -15,7 +15,7 @@ Of course, there will always be exceptions to the rule, but just because metro *
 
 While MahApps.Metro strives to make *good looking* metro interfaces easier, but just like with Windows Form or "default" WPF, a designer (or at least thinking about design) is needed to create a *good* interface. This is a combination of aesthetic and usability.
 
-###Fonts
+### Fonts
 
 Segoe UI, Segoe WP and Zegoe UI are all Microsoft/Ascender fonts. They will not be embedded in MahApps.Metro.
 
@@ -31,7 +31,8 @@ If you're looking for a control that we don't have, we have some friends who hav
 - [Loading indicators](https://github.com/100GPing100/LoadingIndicators.WPF), a collection of loading indicators for WPF by [@100GPing100](https://github.com/100GPing100)
 - [Dragablz](https://github.com/ButchersBoy/Dragablz), dragable and tearable tab control for WPF [http://dragablz.net](http://dragablz.net)
 
-### Maintainers
+<a name="maintainers"></a>
+## Maintainers
 
 <div id="maintainer-list">
   <p>
@@ -52,7 +53,8 @@ If you're looking for a control that we don't have, we have some friends who hav
   </p>
 </div>
 
-### Examples
+<a name="examples"></a>
+## Examples
 
 * [Espera](http://getespera.com) by [@flagbug](https://github.com/flagbug) The best media player for Windows
 * [SimpleMP](https://github.com/punker76/simple-music-player) by [@punker76](https://github.com/punker76) Simple Music Player - SimpleMP - Keeps it simple and plays your music
