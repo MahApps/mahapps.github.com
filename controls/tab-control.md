@@ -25,7 +25,7 @@ Functioning just like the regular `TabControl`, except it animates every tab cha
 ### AnimatedSingleRowTabControl
 
 ```xml
-<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />`
+<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
 ```
 
 `AnimatedSingleRowTabControl` functions exactly the same as the `AnimatedTabControl` except the tabs will only appear on a single line rather than wrapping. 
