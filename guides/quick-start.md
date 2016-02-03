@@ -59,40 +59,51 @@ After installing MahApps.Metro:
 You should have something like this (don't copy and paste this):
 
 ```xml
-<Controls:MetroWindow x:Class="WpfApplication2.MainWindow"
+<Controls:MetroWindow x:Class="WpfApplication.MainWindow"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                       Title="MainWindow" 
-                      Height="350" 
-                      Width="525">
+                      Height="600" 
+                      Width="800">
 
-  <!-- your content here -->
+  <!-- your content -->
 
 </Controls:MetroWindow>
 ```
 
 #### Modifying the CodeBehind File
 
-You'll also need to modify the `MainWindow.xaml.cs` file  so that the base class for `MainWindow` matches the `MetroWindow` class of the XAML file. To access `MetroWindow`, add the following reference first.
-
+You'll also need to modify the `MainWindow.xaml.cs` file  so that the base class for `MainWindow` matches the `MetroWindow` class of the XAML file.
 
 ```csharp
-// using statements...
-using MahApps.Metro.Controls
+// To access MetroWindow, add the following reference
+using MahApps.Metro.Controls;
 
-public partial class MainWindow : MetroWindow
+namespace WpfApplication
 {
-  // ...
+  public partial class MainWindow : MetroWindow
+  {
+    public MainWindow()
+    {
+      InitializeComponent();
+    }
+  }
 }
 ```
 
 But in most cases you can just drop the base class (because this is a `partial` class the XAML should take care of this):
 
 ```csharp
-public partial class MainWindow
+namespace WpfApplication
 {
-  // ...
+  public partial class MainWindow
+  {
+    public MainWindow()
+    {
+      InitializeComponent();
+    }
+  }
 }
 ```
 
@@ -104,22 +115,29 @@ The end result will look something like this:
 
 #### Using Built-In Styles
 
-All of MahApp.Metro's resources are contained within separate resource dictionaries. In order for most of the controls to adopt the MahApps.Metro theme, you will need to add the following ResourceDictionaries to your `App.xaml`.  
+All of MahApp.Metro's resources are contained within separate resource dictionaries. In order for most of the controls to adopt the MahApps.Metro theme, you will need to add the ResourceDictionaries to your `App.xaml`.  
 
 **App.xaml**
 
 ```xml
-<Application.Resources>
-  <ResourceDictionary>
-    <ResourceDictionary.MergedDictionaries>
-      <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
-      <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
-      <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
-      <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
-      <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
-    </ResourceDictionary.MergedDictionaries>
-  </ResourceDictionary>
-</Application.Resources>
+<Application x:Class="WpfApplication.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+        <!-- Accent and AppTheme setting -->
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
 ```
 
 > Make sure that all file names are Case Sensitive!
@@ -167,11 +185,11 @@ Including this within the `<MetroWindow> ... </MetroWindow>` tag:
     <Button Content="settings" />
     <Button>
       <StackPanel Orientation="Horizontal">
-        <Rectangle Width="20" Height="20"
+        <Rectangle Width="20"
+                   Height="20"
                    Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
           <Rectangle.OpacityMask>
-            <VisualBrush Stretch="Fill"
-                         Visual="{StaticResource appbar_cupcake}" />
+            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cupcake}" />
           </Rectangle.OpacityMask>
         </Rectangle>
         <TextBlock Margin="4 0 0 0"
