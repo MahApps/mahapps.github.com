@@ -15,8 +15,7 @@ title: Quick Start
 
 This guide will introduce you to how *MahApps.Metro* works and how to incorporate it into your app.
 
-<a name="installation"></a>
-### Installation
+### Installation {#installation}
 
 You can install MahApps.Metro via the NuGet GUI (right click on your project, click **Manage NuGet Packages**, select **Online** and search for **MahApps.Metro**) or with the Package Manager Console:
 
@@ -31,8 +30,7 @@ or use the Package Manager Console:
 <pre class="nuget-button">Install-Package MahApps.Metro -Pre</pre>
 
 
-<a name="styling"></a>
-### Styling the Window
+### Styling the Window {#styling}
 
 There's two ways you can style your Window using MahApps.Metro:
 
@@ -63,8 +61,8 @@ You should have something like this (don't copy and paste this):
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-                      Title="MainWindow" 
-                      Height="600" 
+                      Title="MainWindow"
+                      Height="600"
                       Width="800">
 
   <!-- your content -->
@@ -148,8 +146,7 @@ The end result will look something like this. If you want to know more about how
 
 ---
 
-<a name="explanation"></a>
-### What's a MetroWindow?
+### What's a MetroWindow? {#explanation}
 
 The default `MetroWindow` is made up of a few components:
 
@@ -160,20 +157,17 @@ If you don't like the elements that are labelled, fear not, they're all optional
 - The titlebar is what sets `MetroWindow` apart from rolling your own. `ShowTitleBar="True|False"`
 - The resize grip is not the *only* way to resize a `MetroWindow` - all edges and corners can be gripped, but given a `MetroWindow` doesn't have a noticeable window "chrome" like an aero window, the resize grip can help reassure users.
 - Instead of using static images, the icons for minimize/maximize/close are a font called **Marlett**. To explain why this is so requires a walk down memory lane, or at least a visit to [the Wikipedia article](http://en.wikipedia.org/wiki/Marlett) about it.
-- You can even hide the icons on the title bar by setting the `ShowIconOnTitleBar="True|False"` 
+- You can even hide the icons on the title bar by setting the `ShowIconOnTitleBar="True|False"`
 
-<a name="customization"></a>
-### Customization
+### Customization {#customization}
 
-<a name="windowbuttoncommands"></a>
-#### WindowButtonCommands
+#### WindowButtonCommands {#windowbuttoncommands}
 
 `WindowButtonCommands` are the minimize, maximize/restore, and close buttons. You can hide the buttons with `ShowMinButton="True|False"`, `ShowMaxRestoreButton="True|False"` and `ShowCloseButton="True|False"`.
 
 The visibility of the minimize and maximize/restore buttons are also effected by the `ResizeMode`. If `ResizeMode="NoResize"` the buttons are collapsed. If `ResizeMode="CanMinimize"` the maximize/restore button is collapsed.
 
-<a name="windowcommands"></a>
-#### (Left-/Right-) WindowCommands
+#### (Left-/Right-) WindowCommands {#windowcommands}
 
 You can add your own controls to `LeftWindowsCommands` or `RightWindowsCommands` - by default, buttons have a style automatically applied to them to make them fit in with the rest of the `WindowsCommands`. As of 0.9, you are no longer limited to just buttons, but any control. Be aware, you're responsible for styling anything other than buttons.
 
@@ -209,7 +203,6 @@ Produces this window titlebar:
 
 The foreground (link) colour of `(Left-/Right-) WindowCommands` will always be white, *unless* the titlebar is disabled, in which case it will be the reverse of whatever theme you have selected. For example, using the White/Light theme, the foreground colour will be black.
 
-<a name="moreinfo"></a>
-### What Next?
+### What's Next? {#moreinfo}
 
 For extended documentation, take a look at the [Controls]({{site.baseurl}}/controls/) page

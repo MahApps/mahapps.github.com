@@ -10,14 +10,14 @@ title: Styles
 - [How to change the current theme... On a Window different to your Application's MainPage](#window)
 - [Creating Custom Accents and Themes](#custom)
 
-<a name="overview"></a>
-### Overview
+### Overview {#overview}
+
 This guide will introduce you to the many accents and themes that `MahApps.Metro` has and how to create your own.
 
 All of `MahApps.Metro`'s accents and themes are contained within separate resource dictionaries **(Make sure that all file names are spelled correct. They are Case Sensitive!).**
 
-<a name="app"></a>
-## How to change the current theme
+## How to change the current theme {#app}
+
 You can choose between these available accents:
 
 > "Red", "Green", "Blue", "Purple", "Orange", "Lime", "Emerald", "Teal", "Cyan", "Cobalt", "Indigo", "Violet", "Pink", "Magenta", "Crimson", "Amber", "Yellow", "Brown", "Olive", "Steel", "Mauve", "Taupe", "Sienna"
@@ -57,8 +57,8 @@ The fastest way is to specify the accent and theme resource in App.xaml.
 
 ![Cobalt and BaseLight theme.](http://jkarger.de/images/mahapps_themes_01.png)
 
-<a name="thememanager"></a>
-#### via ThemeManager
+#### via ThemeManager {#thememanager}
+
 `MahApps.Metro` has a `ThemeManager` method that lets you change the accent and theme using the code-behind file. It can be done in 2 lines, like so:
 
 ```csharp
@@ -79,8 +79,8 @@ public partial class App : Application
 }
 ```
 
-<a name="window"></a>
-### On a Window different to your Application's MainPage
+### On a Window different to your Application's MainPage {#window}
+
 With `MahApps.Metro` you can have a different accent and theme for a `MetroWindow`. The main window or any other `MetroWindow` will keep the specified accent and theme in the App.xaml.
 
 ```xml
@@ -111,11 +111,11 @@ public partial class AccentStyleWindow : MetroWindow
                                     ThemeManager.GetAccent("Red"),
                                     ThemeManager.GetAppTheme("BaseDark"));
     }
-} 
+}
 ```
 
-<a name="custom"></a>
-## Creating Custom Accents and Themes
+## Creating Custom Accents and Themes {#custom}
+
 Another nice feature of `MahApps.Metro` `ThemeManager` is to use custom created accents and themes or use a dynamically created accent and theme.
 
 ```xml
