@@ -1,6 +1,6 @@
 markdown: kramdown
+kramdown:
   input: GFM
-#pygments: true
 highlighter: rouge
 
 baseurl: http://mahapps.com
