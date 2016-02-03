@@ -1,8 +1,11 @@
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+  input: GFM
+#pygments: true
+highlighter: rouge
 
 baseurl: http://mahapps.com
 
 gems:
   - jekyll-mentions
   - jekyll-sitemap
+  - jemoji
