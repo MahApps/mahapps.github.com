@@ -31,8 +31,7 @@ If you're looking for a control that we don't have, we have some friends who hav
 - [Loading indicators](https://github.com/100GPing100/LoadingIndicators.WPF), a collection of loading indicators for WPF by [@100GPing100](https://github.com/100GPing100)
 - [Dragablz](https://github.com/ButchersBoy/Dragablz), dragable and tearable tab control for WPF [http://dragablz.net](http://dragablz.net)
 
-<a name="maintainers"></a>
-## Maintainers
+## Maintainers {#maintainers}
 
 <div id="maintainer-list">
   <p>
@@ -53,8 +52,7 @@ If you're looking for a control that we don't have, we have some friends who hav
   </p>
 </div>
 
-<a name="examples"></a>
-## Examples
+## Examples {#examples}
 
 * [Espera](http://getespera.com) by [@flagbug](https://github.com/flagbug) The best media player for Windows
 * [SimpleMP](https://github.com/punker76/simple-music-player) by [@punker76](https://github.com/punker76) Simple Music Player - SimpleMP - Keeps it simple and plays your music
