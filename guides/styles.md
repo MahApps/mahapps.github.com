@@ -64,15 +64,16 @@ The fastest way is to specify the accent and theme resource in App.xaml.
 ```csharp
 public partial class App : Application
 {
-    protected override void OnStartup (StartupEventArgs e)
+    protected override void OnStartup(StartupEventArgs e)
     {
-        // get the theme from the current application
-        var theme = ThemeManager.DetectAppStyle(Application.Current);
+        // get the current app style (theme and accent) from the application
+        // you can then use the current theme and custom accent instead set a new theme
+        Tuple<AppTheme, Accent> appStyle = ThemeManager.DetectAppStyle(Application.Current);
 
         // now set the Green accent and dark theme
         ThemeManager.ChangeAppStyle(Application.Current,
                                     ThemeManager.GetAccent("Green"),
-                                    ThemeManager.GetAppTheme("BaseDark"));
+                                    ThemeManager.GetAppTheme("BaseDark")); // or appStyle.Item1
 
         base.OnStartup(e);
     }
@@ -103,10 +104,7 @@ public partial class AccentStyleWindow : MetroWindow
 {
     public void ChangeAppStyle()
     {
-        // get the theme from the window
-        var theme = ThemeManager.DetectAppStyle(this);
-
-        // now set the Red accent and dark theme
+        // set the Red accent and dark theme only to the current window
         ThemeManager.ChangeAppStyle(this,
                                     ThemeManager.GetAccent("Red"),
                                     ThemeManager.GetAppTheme("BaseDark"));
@@ -171,23 +169,23 @@ In order to use this custom accent, you need to add it to the `ThemeManager` fir
 ```csharp
 public partial class App : Application
 {
-  protected override void OnStartup(StartupEventArgs e)
-	{
-    	// add custom accent and theme resource dictionaries to the ThemeManager
+    protected override void OnStartup(StartupEventArgs e)
+    {
+        // add custom accent and theme resource dictionaries to the ThemeManager
         // you should replace MahAppsMetroThemesSample with your application name
         // and correct place where your custom accent lives
-    	ThemeManager.AddAccent("CustomAccent1", new Uri("pack://application:,,,/MahAppsMetroThemesSample;component/CustomAccents/CustomAccent1.xaml"));
+        ThemeManager.AddAccent("CustomAccent1", new Uri("pack://application:,,,/MahAppsMetroThemesSample;component/CustomAccents/CustomAccent1.xaml"));
 
-    	// get the current app style (theme and accent) from the application
-    	Tuple<AppTheme, Accent> theme = ThemeManager.DetectAppStyle(Application.Current);
+        // get the current app style (theme and accent) from the application
+        Tuple<AppTheme, Accent> theme = ThemeManager.DetectAppStyle(Application.Current);
 
-    	// now change app style to the custom accent and current theme
-    	ThemeManager.ChangeAppStyle(Application.Current,
-                                ThemeManager.GetAccent("CustomAccent1"),
-                                theme.Item1);
+        // now change app style to the custom accent and current theme
+        ThemeManager.ChangeAppStyle(Application.Current,
+                                    ThemeManager.GetAccent("CustomAccent1"),
+                                    theme.Item1);
 
-    	base.OnStartup(e);
-	}
+        base.OnStartup(e);
+    }
 }
 ```
 
