@@ -120,7 +120,7 @@ Another nice feature of `MahApps.Metro` `ThemeManager` is to use custom created 
 
 ```xml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!--ACCENT COLORS-->
     <Color x:Key="HighlightColor">#FF9F0055</Color>
@@ -135,27 +135,34 @@ Another nice feature of `MahApps.Metro` `ThemeManager` is to use custom created 
     <Color x:Key="AccentColor4">#33D80073</Color>
 
     <!-- re-set brushes too -->
-    <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource HighlightColor}" />
-    <SolidColorBrush x:Key="AccentColorBrush" Color="{StaticResource AccentColor}"/>
-    <SolidColorBrush x:Key="AccentColorBrush2" Color="{StaticResource AccentColor2}"/>
-    <SolidColorBrush x:Key="AccentColorBrush3" Color="{StaticResource AccentColor3}"/>
-    <SolidColorBrush x:Key="AccentColorBrush4" Color="{StaticResource AccentColor4}"/>
+    <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource HighlightColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorBrush" Color="{StaticResource AccentColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorBrush2" Color="{StaticResource AccentColor2}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorBrush3" Color="{StaticResource AccentColor3}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorBrush4" Color="{StaticResource AccentColor4}" options:Freeze="True" />
 
-    <SolidColorBrush x:Key="WindowTitleColorBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="WindowTitleColorBrush" Color="{StaticResource AccentColor}" options:Freeze="True" />
 
-    <SolidColorBrush x:Key="AccentSelectedColorBrush" Color="White" />
-
-    <LinearGradientBrush x:Key="ProgressBrush" EndPoint="0.001,0.5" StartPoint="1.002,0.5">
+    <LinearGradientBrush x:Key="ProgressBrush" EndPoint="0.001,0.5" StartPoint="1.002,0.5" options:Freeze="True">
         <GradientStop Color="{StaticResource HighlightColor}" Offset="0" />
         <GradientStop Color="{StaticResource AccentColor3}" Offset="1" />
     </LinearGradientBrush>
 
-    <SolidColorBrush x:Key="CheckmarkFill" Color="{StaticResource AccentColor}" />
-    <SolidColorBrush x:Key="RightArrowFill" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="CheckmarkFill" Color="{StaticResource AccentColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="RightArrowFill" Color="{StaticResource AccentColor}" options:Freeze="True" />
 
     <Color x:Key="IdealForegroundColor">White</Color>
-    <SolidColorBrush x:Key="IdealForegroundColorBrush" Color="{StaticResource IdealForegroundColor}"/>
+    <SolidColorBrush x:Key="IdealForegroundColorBrush" Color="{StaticResource IdealForegroundColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="IdealForegroundDisabledBrush" Color="{StaticResource IdealForegroundColor}" Opacity="0.4" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentSelectedColorBrush" Color="{StaticResource IdealForegroundColor}" options:Freeze="True" />
 
+    <!-- DataGrid brushes -->
+    <SolidColorBrush x:Key="MetroDataGrid.HighlightBrush" Color="{StaticResource AccentColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="MetroDataGrid.HighlightTextBrush" Color="{StaticResource IdealForegroundColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="MetroDataGrid.MouseOverHighlightBrush" Color="{StaticResource AccentColor3}" options:Freeze="True" />
+    <SolidColorBrush x:Key="MetroDataGrid.FocusBorderBrush" Color="{StaticResource AccentColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="MetroDataGrid.InactiveSelectionHighlightBrush" Color="{StaticResource AccentColor2}" options:Freeze="True" />
+    <SolidColorBrush x:Key="MetroDataGrid.InactiveSelectionHighlightTextBrush" Color="{StaticResource IdealForegroundColor}" options:Freeze="True" />
 </ResourceDictionary>
 ```
 
@@ -166,13 +173,15 @@ public partial class App : Application
 {
   protected override void OnStartup(StartupEventArgs e)
 	{
-    	// add custom accent and theme resource dictionaries
+    	// add custom accent and theme resource dictionaries to the ThemeManager
+        // you should replace MahAppsMetroThemesSample with your application name
+        // and correct place where your custom accent lives
     	ThemeManager.AddAccent("CustomAccent1", new Uri("pack://application:,,,/MahAppsMetroThemesSample;component/CustomAccents/CustomAccent1.xaml"));
 
-    	// get the theme from the current application
-    	var theme = ThemeManager.DetectAppStyle(Application.Current);
+    	// get the current app style (theme and accent) from the application
+    	Tuple<AppTheme, Accent> theme = ThemeManager.DetectAppStyle(Application.Current);
 
-    	// now use the custom accent
+    	// now change app style to the custom accent and current theme
     	ThemeManager.ChangeAppStyle(Application.Current,
                                 ThemeManager.GetAccent("CustomAccent1"),
                                 theme.Item1);
@@ -182,4 +191,7 @@ public partial class App : Application
 }
 ```
 
-It is also possible to create an accent resource dictionary dynamically by using a specific color.
+It is also possible to create an accent resource dictionary dynamically by using a specific color.  
+Take a look to this complete sample available on [GitHub](https://github.com/punker76/code-samples#mahappsmetro-themes).  
+
+![mahapps_more_colors](https://cloud.githubusercontent.com/assets/658431/13557016/9d7e23a4-e3e7-11e5-839a-177c39977e8e.gif)  
