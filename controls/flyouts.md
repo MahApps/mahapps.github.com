@@ -56,8 +56,28 @@ As of version 0.12, flyouts can have various themes, assignable through the `The
 
 <img src="{{site.baseurl}}/images/flyout-demo-accent.png" style="width: 800px;"/>
 
-### Window commands
-`MetroWindow` has an option called `ShowWindowCommandsOnTop`, it makes the window commands the topmost element, even if a flyout is shown.  
-`True` is the default value.
+### WindowCommandsOverlayBehaviorn
 
-![]({{site.baseurl}}/images/showwindowcommandsontop.png)
+`MetroWindow` has overlay properties for `LeftWindowCommands`, `RightWindowCommands`, `WindowButtonCommands` and the `Icon` to handle the topmost status, even if a flyout is shown.
+
+```
+public WindowCommandsOverlayBehavior LeftWindowCommandsOverlayBehavior
+public WindowCommandsOverlayBehavior RightWindowCommandsOverlayBehavior
+public WindowCommandsOverlayBehavior WindowButtonCommandsOverlayBehavior
+public WindowCommandsOverlayBehavior IconOverlayBehavior
+```
+
+These are the values for `WindowCommandsOverlayBehavior`
+
+```
+Never
+OverlayFlyout
+OverlayHiddenTitleBar
+Always
+```
+
+WindowCommandsOverlayBehavior.Always  
+![]({{site.baseurl}}/images/WindowCommandsOverlayBehavior_Always.png)
+
+WindowCommandsOverlayBehavior.Always  
+![]({{site.baseurl}}/images/WindowCommandsOverlayBehavior_Never.png)
