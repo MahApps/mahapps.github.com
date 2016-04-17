@@ -70,14 +70,14 @@ public WindowCommandsOverlayBehavior IconOverlayBehavior
 These are the values for `WindowCommandsOverlayBehavior`
 
 ```
-Never
-OverlayFlyout
-OverlayHiddenTitleBar
+Never // Doesn't overlay flyouts nor a hidden TitleBar.
+Flyouts // Overlays opened Flyout controls.
+HiddenTitleBar // // Overlays a hidden TitleBar.
 Always
 ```
 
 WindowCommandsOverlayBehavior.Always  
 ![]({{site.baseurl}}/images/WindowCommandsOverlayBehavior_Always.png)
 
-WindowCommandsOverlayBehavior.Always  
+WindowCommandsOverlayBehavior.Never  
 ![]({{site.baseurl}}/images/WindowCommandsOverlayBehavior_Never.png)
