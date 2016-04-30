@@ -68,3 +68,4 @@ If you're looking for a control that we don't have, we have some friends who hav
 * [FolderSecurityViewer](https://www.foldersecurityviewer.com) Easy to use NTFS permissions reporter to get all effective security owners of your data
 * [Solutionizer](https://github.com/thoemmi/Solutionizer) by [@thoemmi](https://github.com/thoemmi) Creating ad-hoc solutions for Visual Studio
 * [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) Visualize and debug your live app
+* [James](https://github.com/james-windows/james) - James is a customizable, powerful and yet easy to use launcher.
