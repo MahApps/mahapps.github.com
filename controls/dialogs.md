@@ -21,7 +21,7 @@ Simple message dialogs can be displayed with the `ShowMessageAsync` method. It i
 await this.ShowMessageAsync("This is the title", "Some message");
 ```
     
-There are additional optional paramaters for simple buttons, such as `Ok` and `Cancel` and settings for the color theme and animation options.
+There are additional optional parameters for simple buttons, such as `Ok` and `Cancel` and settings for the color theme and animation options.
 
 ### Progress dialog
 
