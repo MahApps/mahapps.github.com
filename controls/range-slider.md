@@ -71,6 +71,6 @@ Sets minimum width of **central** Thumb. It can be in range **from 0 to range_sl
             UpperThumbDragStarted="OnUpperDragStarted" 
             UpperThumbDragCompleted="OnUpperDragCompleted" 
             AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="2" MoveWholeRange="True"
-            IsSnapToTickEnabled="True" IsMoveToPoint="True" ExtendedMode="True"></Сontrols:RangeSlider>
+            IsSnapToTickEnabled="True" IsMoveToPointEnabled="True" ExtendedMode="True"></Сontrols:RangeSlider>
 ```
 
