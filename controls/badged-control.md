@@ -14,7 +14,7 @@ Examples:
 </Controls:Badged>
 ```
 
-![]({{site.baseurl}}/images/badged-control-button.PNG)
+![]({{site.baseurl}}/images/badged-control-button.png)
 
 ```xml
 <Controls:Badged Badge="{Binding Path=BadgeValue}" BadgePlacementMode="BottomRight">
@@ -25,4 +25,4 @@ Examples:
 </Controls:Badged>
 ```
 
-![]({{site.baseurl}}/images/badged-control-button-icon.PNG)
+![]({{site.baseurl}}/images/badged-control-button-icon.png)
