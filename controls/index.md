@@ -24,3 +24,4 @@ Currently not all controls are documented. The list of controls with documentati
  - [ToggleButton]({{site.baseurl}}/controls/toggle-button.html)
  - [ToggleSwitch]({{site.baseurl}}/controls/toggle-switch.html)
  - [TransitioningContentControl]({{site.baseurl}}/controls/transitioning-content-control.html)
+ - [Badged Controls]({{site.baseurl}}/controls/badged-control.html)
