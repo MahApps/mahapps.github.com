@@ -41,14 +41,14 @@ A picture of the progress dialog in the demo:
 
 You can open dialogs from your viewmodel by using the `IDialogCoordinator`.
 
-1) Add the follwoing code to your Window.xaml or UserControl.xaml
+Add the following code to your `Window.xaml` or `UserControl.xaml`:
 ```xaml
 <UserControl x:Class=="...
 xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
 Dialog:DialogParticipation.Register="{Binding}">
 ```
 
-2) Your code behind in the Window.xaml.cs or UserControl.xaml.cs should look like this
+Your code behind in the `Window.xaml.cs` or `UserControl.xaml.cs`  should look like this:
 ```cs
 using MahApps.Metro.Controls.Dialogs;
 
@@ -68,7 +68,7 @@ namespace EXAMPLE
 }
 ```
 
-3) Last but not least, your viewmodel
+Last but not least, your viewmodel:
 ```cs
 using MahApps.Metro.Controls.Dialogs;
 
