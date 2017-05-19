@@ -36,3 +36,74 @@ This method returns a `ProgressDialogController` object that exposes the `SetPro
 A picture of the progress dialog in the demo:
 
 <img src="{{site.baseurl}}/images/progressdialog.png" style="width: 800px;"/>
+
+### Support for viewmodels
+
+You can open dialogs from your viewmodel by using the `IDialogCoordinator`.
+
+1) Add the follwoing code to your Window.xaml or UserControl.xaml
+```xaml
+<UserControl x:Class=="...
+xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+Dialog:DialogParticipation.Register="{Binding}">
+```
+
+2) Your code behind in the Window.xaml.cs or UserControl.xaml.cs should look like this
+```cs
+using MahApps.Metro.Controls.Dialogs;
+
+namespace EXAMPLE
+{
+    public class USERCONTROL : UserControl
+    {
+        // Here we create the viewmodel with the current DialogCoordinator instance 
+        VIEWMODEL vm = new VIEWMODEL(DialogCoordinator.Instance);
+
+        public USERCONTROL()
+        {
+            InitializeComponent();
+            DataContext = vm;
+        }
+    }
+}
+```
+
+3) Last but not least, your viewmodel
+```cs
+using MahApps.Metro.Controls.Dialogs;
+
+namespace EXAMPLE
+{
+    public class VIEWMODEL : ViewModelBase
+    {
+        // Variable
+        private IDialogCoordinator dialogCoordinator;
+
+        // Constructor
+        public VIEWMODEL (IDialogCoordinator instance)
+        {                    
+            dialogCoordinator = instance;
+        }
+
+        // Methods
+        private void FooMessage()
+        {
+            await dialogCoordinator.ShowMessageAsync(this, "HEADER","MESSAGE");
+        }
+        
+        private void FooProgress()
+        {
+            // Show...
+            ProgressDialogController controller = await dialogCoordinator.ShowProgressAsync(this, "HEADER", "MESSAGE");
+            controller.SetIndeterminate();
+            
+            // Do your work... 
+             
+            // Close...
+            await controller.CloseAsync();
+        }
+        
+        // Actions... (ICommands for your view)
+    }
+}
+```
