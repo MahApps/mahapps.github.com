@@ -46,7 +46,7 @@ It could be bitmap image or vector icon.
     VerticalAlignment="Center" />
 ```
 								
-result will be:
+result will be:  
 ![]({{site.baseurl}}/images/splitButton_2.png)
 
 
@@ -73,7 +73,7 @@ Inj all other aspects it's identical to SplitButton.
 </Controls:DropDownButton>
 ```
 
-Result:
+Result:  
 ![]({{site.baseurl}}/images/dropDownButton_2.png)  
 
 Internally, the items are stored in a ContextMenu that is executed when the button is clicked.
