@@ -30,11 +30,11 @@ Like with InterceptArrowKeys you can change the `Value` by using the mouse wheel
 
 Like with InterceptArrowKeys you can change the `Value` by focusing the control and typing with the keyboard. The default value is `true`.
 
-###Minimum / Maximum
+### Minimum / Maximum
 
 By specifying a value for `Minimum` or `Maximum` you can set the range for legal values.
 
-###HideUpDownButtons
+### HideUpDownButtons
 
 If you want you can hide the Up/Down Buttons. Then you are not able to click up/down to increase/decrease the value. But you can interact with the arrow keys, mouse wheel and entering values Manual.
 
