@@ -9,36 +9,36 @@ The ```FlipView``` acts as a news banner for your metro applications. It is insp
 
 ### Getting started
 
-The ```FlipView``` is syntatically similar to the regular ```TabControl``` control. Place your content inside of it's ```Items``` property and it will allow the user to *flip* through them.
+The ```FlipView``` is syntatically similar to the regular ```TabControl``` (`Selector`) control. Place your content inside of it's ```Items``` property and it will allow the user to *flip* through them.
 
 The following code was taken from our [MetroDemo](https://github.com/MahApps/MahApps.Metro/tree/master/samples/MetroDemo).
 
 ```xml
-<Controls:FlipView Height="200" 
-                   IsBannerEnabled="True" 
-                   SelectionChanged="FlipView_SelectionChanged"
-                   Margin="0, 0, 10, 0">
+<Controls:FlipView x:Name="FlipViewTest"
+                   Foreground="{DynamicResource WhiteBrush}"
+                   Height="200"
+                   SelectionChanged="FlipView_SelectionChanged">
     <Controls:FlipView.Items>
         <Grid Background="#2E8DEF">
-            <Rectangle Margin="0, 0, 10, 0" Width="50" Height="50">
-                <Rectangle.Fill>
-                    <VisualBrush Visual="{StaticResource appbar_cupcake}" />
-                </Rectangle.Fill>
-            </Rectangle>
+            <iconPacks:PackIconModern Width="60"
+                                      Height="60"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Kind="Cupcake" />
         </Grid>
         <Grid Background="#00A600">
-            <Rectangle Margin="0, 0, 10, 0" Width="50" Height="50">
-                <Rectangle.Fill>
-                    <VisualBrush Visual="{StaticResource appbar_xbox}" />
-                </Rectangle.Fill>
-            </Rectangle>
+            <iconPacks:PackIconModern Width="60"
+                                      Height="60"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Kind="Xbox" />
         </Grid>
         <Grid Background="#BF1E4B">
-            <Rectangle Margin="0, 0, 10, 0" Width="50" Height="50">
-                <Rectangle.Fill>
-                    <VisualBrush Visual="{StaticResource appbar_chess_horse}" />
-                </Rectangle.Fill>
-            </Rectangle>
+            <iconPacks:PackIconModern Width="60"
+                                      Height="60"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Kind="ChessHorse" />
         </Grid>
     </Controls:FlipView.Items>
 </Controls:FlipView>
@@ -46,7 +46,7 @@ The following code was taken from our [MetroDemo](https://github.com/MahApps/Mah
 
 The above code produces the following result.
 
-![img2](https://f.cloud.github.com/assets/251501/563025/c8da0998-c4bc-11e2-899a-18425d1ea980.png)
+![flipview](https://user-images.githubusercontent.com/658431/29912993-f366ae1a-8e33-11e7-8073-d43e499775b3.png)
 
 ### The Banner
 
