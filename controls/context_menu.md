@@ -3,7 +3,7 @@ layout: no-sidebar
 title: ContextMenu
 ---
 
-#ContextMenu without CompositeCollection
+### ContextMenu without CompositeCollection
 
 You can use the ContextMenu as you are familiar with it:
 
@@ -15,7 +15,7 @@ You can use the ContextMenu as you are familiar with it:
 </ContextMenu>
 ```
 
-#ContextMenu with CompositeCollection
+### ContextMenu with CompositeCollection
 
 If you want to use a part of the ContextMenu which is declared as resource and is shared you have to use a `CompositeCollection` as follwos:
 
