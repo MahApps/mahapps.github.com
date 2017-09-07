@@ -2,6 +2,7 @@
 layout: no-sidebar
 title: Tile
 ---
+
 The `Tile` is exactly as it sounds. It is a rectangular control whose sole purpose is to mimick a tile from Window 8/WinRT's Start Screen.
 
 ![img](http://www.bleepstatic.com/tutorials/windows-8/introduction-start-screen/windows-8-start-screen.jpg)
@@ -12,10 +13,9 @@ The following XAML will initialize a `Tile` control with its `Title` set to `"He
 
 ```xml
 <controls:Tile Title="Hello!" 
-                    TiltFactor="2"
-                    Width="100" Height="100" 
-                    Count="1">
-</controls:Tile>
+               Width="100"
+               Height="100" 
+               Count="1" />
 ```
 
 ### In the wild
