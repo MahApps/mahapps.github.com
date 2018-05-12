@@ -6,7 +6,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-baseurl: http://mahapps.com
+baseurl: https://mahapps.com
 
 gems:
   - jekyll-mentions
