@@ -55,7 +55,7 @@ The fastest way is to specify the accent and theme resource in App.xaml.
 </Application>
 ```
 
-![Cobalt and BaseLight theme.](http://jkarger.de/images/mahapps_themes_01.png)
+![Cobalt and BaseLight theme.](https://jkarger.de/images/mahapps_themes_01.png)
 
 #### via ThemeManager {#thememanager}
 

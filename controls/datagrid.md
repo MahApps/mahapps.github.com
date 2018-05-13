@@ -18,7 +18,7 @@ MahApps.Metro uses the default DataGrid control but applies a style to it by def
 
 ### Getting Started {#start}
 
-In order for the style to be applied, you will have to include references to the `Styles/Controls` resource dictionary in your `App.xaml` and the namespace `xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"` in the window you are using. Instructions on how to do this can be found in the [Quick Start Guide](http://mahapps.com/guides/quick-start.html).
+In order for the style to be applied, you will have to include references to the `Styles/Controls` resource dictionary in your `App.xaml` and the namespace `xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"` in the window you are using. Instructions on how to do this can be found in the [Quick Start Guide](https://mahapps.com/guides/quick-start.html).
 
 After including the references, any `DataGrid` that you place in XAML will follow the style displayed above.
 

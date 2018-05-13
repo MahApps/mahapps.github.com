@@ -3,7 +3,7 @@ layout: no-sidebar
 title: New website URL
 ---
 
-From now on, the Mahapps.Metro documentation site lives at [http://mahapps.com](http://mahapps.com), instead of [http://mahapps.com/MahApps.Metro](http://mahapps.com/MahApps.Metro)
+From now on, the Mahapps.Metro documentation site lives at [mahapps.com](https://mahapps.com), instead of [https://mahapps.com/MahApps.Metro](https://mahapps.com/MahApps.Metro)
 
 This means less typing for everyone!
 
