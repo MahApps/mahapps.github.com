@@ -60,7 +60,7 @@ If you're looking for a control that we don't have, we have some friends who hav
 * [Markdown Edit](http://markdownedit.com/) by [@mike-ward](https://github.com/mike-ward) A full-featured Markdown editor for Windows with an emphasis on content and keyboard shortcuts
 * [MarkPad](http://code52.org/DownmarkerWPF) by [@Code52](https://github.com/Code52) a visual Markdown editor (inspired by the [Downmarker project](http://code52.org/DownmarkerWPF/))
 * [Carnac](http://code52.org/carnac/) by [@Code52](https://github.com/Code52) the Magnificent Keyboard Utility
-* [ChocolateyGUI](https://github.com/chocolatey/ChocolateyGUI) ChocolateyGUI is a user interface for [Chocolatey NuGet](http://chocolatey.org/) (a Machine Package Manager for Windows)
+* [Chocolatey GUI](https://github.com/chocolatey/ChocolateyGUI) Chocolatey GUI is a user interface for [Chocolatey](http://chocolatey.org/) (a Machine Package Manager for Windows)
 * [Windows Phone Power Tools](http://wptools.codeplex.com/)
 * [Modern UI for WPF (MUI)](https://github.com/firstfloorsoftware/mui) Inspired by MahApps.Metro
 * [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker) by [@Epix37](https://github.com/Epix37) HDT is an automatic deck tracker and manager for Hearthstone
