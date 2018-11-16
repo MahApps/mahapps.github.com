@@ -11,7 +11,7 @@ This just replaces the standard button when you drop in the library, nothing fan
 ### MetroCircleButton
 
 "Standard" circle button, designed for icons.  
-Add the following to a button to apply this style: `Style="{DynamicResource MetroCircleButtonStyle}"`  
+Add the following to a button to apply this style: `Style="{DynamicResource MahApps.Metro.Styles.MetroCircleButtonStyle}"`  
 
 ![]({{site.baseurl}}/images/07_CircleButtons.png)
 
