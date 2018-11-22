@@ -3,7 +3,7 @@ layout: no-sidebar
 title: Styles
 ---
 
-### Table of Contents
+### Table of Contents (v1.6.5 and older)
 - [Overview](#overview)
 - [How to change the current theme... via App.xaml](#app)
 - [How to change the current theme... via ThemeManager](#thememanager)
@@ -27,6 +27,7 @@ and these themes:
 
 
 #### via App.xaml
+
 The fastest way is to specify the accent and theme resource in App.xaml.
 
 ```xml

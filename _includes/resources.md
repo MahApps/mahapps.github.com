@@ -1,20 +1,38 @@
 ##Resources
 
-
 ###Icons
 
-MahApps.Metro does not embed any icons or "resources" other than control styles. However, there is *[MahApps.Metro.Resources](http://nuget.org/packages?q=MahApps.Metro.Resources)* package. This allows better discoverability and customisation.
+`MahApps.Metro` can use the [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) which contains controls to use these awesome icons in a simple way.
 
-You can install this package using nuget:
+    <Window x:Class="IconPacksTest.App"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+            Title="IconPacks" Height="300" Width="300">
 
-<pre class="nuget-button">Install-Package MahApps.Metro.Resources</pre>
+        <Grid>
+            <iconPacks:PackIconMaterial Kind="EmoticonCool" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Grid>
 
-Currently, this consists of [Entypo](http://www.entypo.com/) and [Temparian's Windows Phone Icon pack](http://templarian.com/project_windows_phone_icons/)
+    </Window>
+
+###Modern UI Icons [obsolete]
+
+MahApps.Metro does not embed any icons or "resources" other than control styles. However, there is *[MahApps.Metro.Resources](https://www.nuget.org/packages/MahApps.Metro.Resources/)* package. This allows better discoverability and customisation.
+
+You can install this package using NuGet via Package Manager or Client:
+
+```powershell
+PM> Install-Package MahApps.Metro
+```
+
+Currently, this consists of [Entypo](http://entypo.com/) and [Temparian's Modern UI Icons](http://modernuiicons.com/).
 
 ![](images/6_Resources.png)
 
 
-####Usage
+####Usage [obsolete]
+
 The resources are simply `Canvas`'s wrapping one or more `Path`s. To use these sorts of elements, you can just use WPF's `VisualBrush`.
 
 	<Window.Resources>

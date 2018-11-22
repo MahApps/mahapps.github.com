@@ -1,3 +1,4 @@
+/*
 (function () {
 	var nb = document.createElement('script'); 
 	nb.type = 'text/javascript'; 
@@ -6,7 +7,8 @@
 	var s = document.getElementsByTagName('script')[0];
 	s.parentNode.insertBefore(nb, s);
 })();
-
+*/
+/*
 var template = '{{#contributors}}<li><img src="http://gravatar.com/avatar/{{gravatar_id}}?s=25" alt="{{name}}" />  <a href="https://github.com/{{login}}">{{login}}</a> - ({{contributions}} commits) </li>{{/contributors}}';
 function getContribs() {
 	$.ajax({
@@ -62,3 +64,4 @@ function getContribs() {
 		getContribs();
 	});
 })(jQuery)
+*/

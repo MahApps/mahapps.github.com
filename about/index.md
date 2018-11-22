@@ -27,9 +27,10 @@ In order to maintain compatibility for both .NET 4.0 and 4.5, we make use of the
 
 If you're looking for a control that we don't have, we have some friends who have made MA.M compatible controls. Check them out:
 
-- [MahApps.Metro.SimpleChildWindow](https://github.com/punker76/MahApps.Metro.SimpleChildWindow), a simple child window for MahApps.Metro
-- [Loading indicators](https://github.com/100GPing100/LoadingIndicators.WPF), a collection of loading indicators for WPF by [@100GPing100](https://github.com/100GPing100)
-- [Dragablz](https://github.com/ButchersBoy/Dragablz), dragable and tearable tab control for WPF [http://dragablz.net](http://dragablz.net)
+- [MaterialDesignInXamlToolkit](https://github.com/ButchersBoy/MaterialDesignInXamlToolkit) Google Material Design in XAML & WPF, for C# & VB.Net [materialdesigninxaml.net](http://materialdesigninxaml.net)
+- [MahApps.Metro.SimpleChildWindow](https://github.com/punker76/MahApps.Metro.SimpleChildWindow) A simple child window for MahApps.Metro
+- [Loading indicators](https://github.com/zeluisping/LoadingIndicators.WPF) by [@zeluisping](https://github.com/zeluisping)
+- [Dragablz](https://github.com/ButchersBoy/Dragablz) Tearable tab control for WPF, which includes docking, tool windows and MDI. [dragablz.net](https://dragablz.net)
 
 ## Maintainers {#Maintainers}
 
@@ -54,18 +55,18 @@ If you're looking for a control that we don't have, we have some friends who hav
 
 ## Examples {#Examples}
 
-* [Espera](http://getespera.com) by [@flagbug](https://github.com/flagbug) The best media player for Windows
+* [Espera](https://github.com/flagbug/Espera) by [@flagbug](https://github.com/flagbug)
 * [SimpleMP](https://github.com/punker76/simple-music-player) by [@punker76](https://github.com/punker76) Simple Music Player - SimpleMP - Keeps it simple and plays your music
 * [myEcho](http://myechoapp.com/) iOS Dictation for Windows
-* [Markdown Edit](http://markdownedit.com/) by [@mike-ward](https://github.com/mike-ward) A full-featured Markdown editor for Windows with an emphasis on content and keyboard shortcuts
-* [MarkPad](http://code52.org/DownmarkerWPF) by [@Code52](https://github.com/Code52) a visual Markdown editor (inspired by the [Downmarker project](http://code52.org/DownmarkerWPF/))
-* [Carnac](http://code52.org/carnac/) by [@Code52](https://github.com/Code52) the Magnificent Keyboard Utility
-* [Chocolatey GUI](https://github.com/chocolatey/ChocolateyGUI) Chocolatey GUI is a user interface for [Chocolatey](http://chocolatey.org/) (a Machine Package Manager for Windows)
-* [Windows Phone Power Tools](http://wptools.codeplex.com/)
+* [Markdown Edit](https://markdownedit.com) by [@mike-ward](https://github.com/mike-ward) A full-featured Markdown editor for Windows with an emphasis on content and keyboard shortcuts
+* [MarkPad](https://github.com/Code52/DownmarkerWPF) by [@Code52](https://github.com/Code52) a visual Markdown editor
+* [Carnac](https://github.com/Code52/carnac) by [@Code52](https://github.com/Code52) the Magnificent Keyboard Utility
+* [Chocolatey GUI](https://github.com/chocolatey/ChocolateyGUI) Chocolatey GUI is a user interface for [Chocolatey](https://chocolatey.org/) (a Machine Package Manager for Windows)
 * [Modern UI for WPF (MUI)](https://github.com/firstfloorsoftware/mui) Inspired by MahApps.Metro
 * [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker) by [@Epix37](https://github.com/Epix37) HDT is an automatic deck tracker and manager for Hearthstone
 * [Papercut](https://github.com/jaben/papercut) by [@Jaben](https://github.com/Jaben) Simple Desktop SMTP Server / Email Receiver
 * [FolderSecurityViewer](https://www.foldersecurityviewer.com) Easy to use NTFS permissions reporter to get all effective security owners of your data
 * [Solutionizer](https://github.com/thoemmi/Solutionizer) by [@thoemmi](https://github.com/thoemmi) Creating ad-hoc solutions for Visual Studio
-* [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) Visualize and debug your live app
+* [Xamarin Inspector](https://docs.microsoft.com/en-us/xamarin/tools/inspector/) Visualize and debug your live app
+* [Xamarin Workbooks](https://docs.microsoft.com/en-us/xamarin/tools/workbooks/) Workbooks is an interactive programming environment that’s perfect for experimentation, learning, and documentation: an educational tool for learning the myriad of .NET platforms, APIs, and libraries. [Source](https://github.com/Microsoft/workbooks)
 * [James](https://github.com/james-windows/james) - James is a customizable, powerful and yet easy to use launcher.

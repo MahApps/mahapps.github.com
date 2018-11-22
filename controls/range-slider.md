@@ -5,7 +5,7 @@ title: RangeSlider
 
 ![]({{site.baseurl}}/images/range_slider.PNG)  
 
-Taken from the [Avalon Controls Library](http://avaloncontrolslib.codeplex.com/) (MS-PL), `RangeSlider` lets you select a range of values with a slider, rather than a single value.
+Taken from the [Avalon Controls Library](https://avaloncontrolslib.codeplex.com/) (MS-PL) [GitHub fork](https://github.com/jogibear9988/avaloncontrolslib), `RangeSlider` lets you select a range of values with a slider, rather than a single value.
 
 This control was updated to have more features
 

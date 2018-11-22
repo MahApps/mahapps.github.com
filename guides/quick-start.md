@@ -19,7 +19,9 @@ This guide will introduce you to how *MahApps.Metro* works and how to incorporat
 
 You can install MahApps.Metro via the NuGet GUI (right click on your project, click **Manage NuGet Packages**, select **Online** and search for **MahApps.Metro**) or with the Package Manager Console:
 
-<pre class="nuget-button">Install-Package MahApps.Metro</pre>
+```powershell
+PM> Install-Package MahApps.Metro
+```
 
 If you want to use the pre-release packages of MahApps.Metro (these have the latest code and newest features), you need to enable **Include Prerelease** in the GUI:
 
@@ -27,8 +29,9 @@ If you want to use the pre-release packages of MahApps.Metro (these have the lat
 
 or use the Package Manager Console:
 
-<pre class="nuget-button">Install-Package MahApps.Metro -Pre</pre>
-
+```powershell
+PM> Install-Package MahApps.Metro -Pre
+```
 
 ### Styling the Window {#styling}
 
@@ -115,7 +118,28 @@ The end result will look something like this:
 
 All of MahApp.Metro's resources are contained within separate resource dictionaries. In order for most of the controls to adopt the MahApps.Metro theme, you will need to add the ResourceDictionaries to your `App.xaml`.  
 
-**App.xaml**
+**App.xaml (v2.0.0 and newer)**
+
+```xml
+<Application x:Class="WpfApplication.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+        <!-- Accent and AppTheme setting -->
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
+```
+
+**App.xaml (v1.6.5 and older)**
 
 ```xml
 <Application x:Class="WpfApplication.App"
@@ -156,7 +180,7 @@ If you don't like the elements that are labelled, fear not, they're all optional
 
 - The titlebar is what sets `MetroWindow` apart from rolling your own. `ShowTitleBar="True|False"`
 - The resize grip is not the *only* way to resize a `MetroWindow` - all edges and corners can be gripped, but given a `MetroWindow` doesn't have a noticeable window "chrome" like an aero window, the resize grip can help reassure users.
-- Instead of using static images, the icons for minimize/maximize/close are a font called **Marlett**. To explain why this is so requires a walk down memory lane, or at least a visit to [the Wikipedia article](http://en.wikipedia.org/wiki/Marlett) about it.
+- Instead of using static images, the icons for minimize/maximize/close are a font called **Marlett**. To explain why this is so requires a walk down memory lane, or at least a visit to [the Wikipedia article](https://en.wikipedia.org/wiki/Marlett) about it.
 - You can even hide the icons on the title bar by setting the `ShowIconOnTitleBar="True|False"`
 
 ### Customization {#customization}
