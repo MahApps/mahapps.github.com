@@ -3,10 +3,11 @@ layout: no-sidebar
 title: Icons and Resources - MahApps.Metro
 ---
 
-###Icons
+### Icons
 
 `MahApps.Metro` can use the [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) which contains controls to use these awesome icons in a simple way.
 
+```xml
     <Window x:Class="IconPacksTest.App"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -18,8 +19,9 @@ title: Icons and Resources - MahApps.Metro
         </Grid>
 
     </Window>
+```
 
-###Modern UI Icons [obsolete]
+### Modern UI Icons [obsolete]
 
 MahApps.Metro does not embed any icons or "resources" other than control styles. However, there is *[MahApps.Metro.Resources](https://www.nuget.org/packages/MahApps.Metro.Resources/)* package. This allows better discoverability and customisation.
 
