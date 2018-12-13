@@ -7,6 +7,7 @@ title: Icons and Resources - MahApps.Metro
 
 `MahApps.Metro` can use the [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) which contains controls to use these awesome icons in a simple way.
 
+```xml
     <Window x:Class="IconPacksTest.App"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -18,6 +19,7 @@ title: Icons and Resources - MahApps.Metro
         </Grid>
 
     </Window>
+```
 
 ### Modern UI Icons [obsolete]
 
