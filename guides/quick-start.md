@@ -198,28 +198,34 @@ You can add your own controls to `LeftWindowsCommands` or `RightWindowsCommands`
 Including this within the `<MetroWindow> ... </MetroWindow>` tag:
 
 ```xml
-<Controls:MetroWindow.RightWindowCommands>
-  <Controls:WindowCommands>
-    <Button Content="settings" />
-    <Button>
-      <StackPanel Orientation="Horizontal">
-        <Rectangle Width="20"
-                   Height="20"
-                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
-          <Rectangle.OpacityMask>
-            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cupcake}" />
-          </Rectangle.OpacityMask>
-        </Rectangle>
-        <TextBlock Margin="4 0 0 0"
-                   VerticalAlignment="Center"
-                   Text="deploy cupcakes" />
-      </StackPanel>
-    </Button>
-  </Controls:WindowCommands>
-</Controls:MetroWindow.RightWindowCommands>
+<Controls:MetroWindow x:Class="MahAppsMetroSample.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      Title="MahApps.Metro.Sample"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      WindowStartupLocation="CenterScreen">
+
+  <Controls:MetroWindow.RightWindowCommands>
+    <Controls:WindowCommands>
+      <Button Content="settings" />
+      <Button>
+        <StackPanel Orientation="Horizontal">
+          <iconPacks:PackIconModern Width="24" Height="24" Kind="FoodCupcake" />
+            <TextBlock Margin="4 0 0 0" VerticalAlignment="Center" Text="deploy cupcakes" />
+        </StackPanel>
+      </Button>
+    </Controls:WindowCommands>
+  </Controls:MetroWindow.RightWindowCommands>
+
+  <Grid>
+  </Grid>
+
+</Controls:MetroWindow>
 ```
 
-> Make sure to include the [icons]({{site.baseurl}}/guides/icons-and-resources.html) to get the cupcake.
+> Make sure to include the [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) to get the cupcake.
 
 Produces this window titlebar:
 
