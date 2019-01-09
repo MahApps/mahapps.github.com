@@ -36,37 +36,35 @@ If you're looking for a control that we don't have, we have some friends who hav
 
 <div id="maintainer-list">
   <p>
-    <img src="https://1.gravatar.com/avatar/1aea0f4dba1906e759377308c0df08f6?s=40"> Jan Karger (@punker76)
-    <a href="https://twitter.com/punker76">Twitter</a>
+    <img src="https://1.gravatar.com/avatar/1aea0f4dba1906e759377308c0df08f6?s=40"> Jan Karger @punker76 (maintainer, owner), <a href="https://twitter.com/punker76">Twitter</a>
   </p>
   <p>
-    <img src="https://0.gravatar.com/avatar/337e8e7f3447c1245268f3313a3c3d88?s=40"> Brendan Forster (@shiftkey) 
-    <a href="https://twitter.com/shiftkey">Twitter</a>
+    <img src="https://0.gravatar.com/avatar/337e8e7f3447c1245268f3313a3c3d88?s=40"> Brendan Forster @shiftkey (owner, inactive), <a href="https://twitter.com/shiftkey">Twitter</a>
   </p>
   <p>
-    <img src="https://2.gravatar.com/avatar/2ad310d3d4686045a088ed29029a62f0?s=40"> Dennis Daume (@flagbug)
-    <a href="https://twitter.com/flagbug">Twitter</a>
+    <img src="https://2.gravatar.com/avatar/2ad310d3d4686045a088ed29029a62f0?s=40"> Dennis Daume @flagbug (inactive), <a href="https://twitter.com/flagbug">Twitter</a>
   </p>
   <p>
-    <img src="https://0.gravatar.com/avatar/0d3e475b86cba8c7eb6144364157ae8f?s=40"> Alex Mitchell (@Amrykid)
-    <a href="https://twitter.com/Amrykid">Twitter</a>
+    <img src="https://0.gravatar.com/avatar/0d3e475b86cba8c7eb6144364157ae8f?s=40"> Alex Mitchell @Amrykid (inactive), <a href="https://twitter.com/Amrykid">Twitter</a>
   </p>
 </div>
 
 ## Examples {#Examples}
 
-* [Espera](https://github.com/flagbug/Espera) by [@flagbug](https://github.com/flagbug)
-* [SimpleMP](https://github.com/punker76/simple-music-player) by [@punker76](https://github.com/punker76) Simple Music Player - SimpleMP - Keeps it simple and plays your music
-* [myEcho](http://myechoapp.com/) iOS Dictation for Windows
-* [Markdown Edit](https://markdownedit.com) by [@mike-ward](https://github.com/mike-ward) A full-featured Markdown editor for Windows with an emphasis on content and keyboard shortcuts
-* [MarkPad](https://github.com/Code52/DownmarkerWPF) by [@Code52](https://github.com/Code52) a visual Markdown editor
+* [Azuser](https://github.com/Inzanit/azuser) by [@Inzanit](https://github.com/Inzanit) Azure SQL Server User Management
 * [Carnac](https://github.com/Code52/carnac) by [@Code52](https://github.com/Code52) the Magnificent Keyboard Utility
 * [Chocolatey GUI](https://github.com/chocolatey/ChocolateyGUI) Chocolatey GUI is a user interface for [Chocolatey](https://chocolatey.org/) (a Machine Package Manager for Windows)
-* [Modern UI for WPF (MUI)](https://github.com/firstfloorsoftware/mui) Inspired by MahApps.Metro
-* [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker) by [@Epix37](https://github.com/Epix37) HDT is an automatic deck tracker and manager for Hearthstone
-* [Papercut](https://github.com/jaben/papercut) by [@Jaben](https://github.com/Jaben) Simple Desktop SMTP Server / Email Receiver
+* [Espera](https://github.com/flagbug/Espera) by [@flagbug](https://github.com/flagbug)
 * [FolderSecurityViewer](https://www.foldersecurityviewer.com) Easy to use NTFS permissions reporter to get all effective security owners of your data
+* [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker) by [@Epix37](https://github.com/Epix37) HDT is an automatic deck tracker and manager for Hearthstone
+* [Markdown Edit](https://markdownedit.com) by [@mike-ward](https://github.com/mike-ward) A full-featured Markdown editor for Windows with an emphasis on content and keyboard shortcuts
+* [Markdown Monster](https://markdownmonster.west-wind.com) by [@RickStrahl](https://github.com/RickStrahl) An extensible Markdown Editor, Viewer and Weblog Publisher for Windows
+* [MarkPad](https://github.com/Code52/DownmarkerWPF) by [@Code52](https://github.com/Code52) a visual Markdown editor
+* [Modern UI for WPF (MUI)](https://github.com/firstfloorsoftware/mui) Inspired by MahApps.Metro
+* [myEcho](http://myechoapp.com/) iOS Dictation for Windows
+* [NETworkManager](https://github.com/BornToBeRoot/NETworkManager) by [@BornToBeRoot](https://github.com/BornToBeRoot) A powerful tool for managing networks and troubleshoot network problems!
+* [Papercut](https://github.com/jaben/papercut) by [@Jaben](https://github.com/Jaben) Simple Desktop SMTP Server / Email Receiver
+* [SimpleMP](https://github.com/punker76/simple-music-player) by [@punker76](https://github.com/punker76) Simple Music Player - SimpleMP - Keeps it simple and plays your music
 * [Solutionizer](https://github.com/thoemmi/Solutionizer) by [@thoemmi](https://github.com/thoemmi) Creating ad-hoc solutions for Visual Studio
 * [Xamarin Inspector](https://docs.microsoft.com/en-us/xamarin/tools/inspector/) Visualize and debug your live app
 * [Xamarin Workbooks](https://docs.microsoft.com/en-us/xamarin/tools/workbooks/) Workbooks is an interactive programming environment that’s perfect for experimentation, learning, and documentation: an educational tool for learning the myriad of .NET platforms, APIs, and libraries. [Source](https://github.com/Microsoft/workbooks)
-* [James](https://github.com/james-windows/james) - James is a customizable, powerful and yet easy to use launcher.
