@@ -1,9 +1,10 @@
 pre, code {
-	font-family: 'Source Code Pro', sans-serif;
-	font-weight: 500;
-	font-size: 0.9em;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
   line-height: normal;
   background-color: #F2F2F2;
+  overflow: auto;
 }
 
 blockquote {
