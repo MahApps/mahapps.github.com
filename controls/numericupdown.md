@@ -57,27 +57,28 @@ e.g.
 Following line will provide a NumericUpDown that allows numers from 0 to 1000. Furthermore by pressing `+` the value gets increased by 5. The value will be shown as currency with two decimal places:
 
 ```xml
-<Controls:NumericUpDown Minimum = 0, Maximum = 10000, Interval = 5, StringFormat="C2"/>
+<mah:NumericUpDown Minimum="0"
+                        Maximum="10000"
+                        Interval="5"
+                        StringFormat="C2" />
 ```
 
+Namespace is `xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"`.
+
 ## Custom Styling
+
 ### Want to hide Up-Down Buttons if control is readonly?
 
 If you want to hide the Up-Down Buttons if the control is readonly then you can add following Style to your application
 
 ```xml
-<Style TargetType="{x:Type controls:NumericUpDown}">
-                <Style.Triggers>
-                    <Trigger Property="IsReadOnly"
-                                 Value="True">
-                        <Setter Property="HideUpDownButtons"
-                                    Value="True" />
-                    </Trigger>
-                </Style.Triggers>
-            </Style>
+<Style TargetType="{x:Type mah:NumericUpDown}" BasedOn="{StaticResource {x:Type mah:NumericUpDown}}">
+  <Style.Triggers>
+    <Trigger Property="IsReadOnly" Value="True">
+      <Setter Property="HideUpDownButtons" Value="True" />
+    </Trigger>
+  </Style.Triggers>
+</Style>
 ```
 
-
-
-
-
+Namespace is `xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"`.
